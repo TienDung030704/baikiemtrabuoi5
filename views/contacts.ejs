@@ -1,0 +1,53 @@
+<%- include('partials/header') %>
+
+<div id="content">
+    <div id="leftPan">
+        <div id="welcome">
+            <h2></h2>
+            <img src="/images/img_welcome.jpg" width="172" height="56" alt="Contacts" />
+            <p class="headline">Liên hệ với chúng tôi ngay hôm nay!</p>
+            <p>
+                <strong>Địa chỉ:</strong> 123 Đường Hoa Hồng, Q.1, TP.HCM<br />
+                <strong>Điện thoại:</strong> 0909 123 456<br />
+                <strong>Email:</strong> info@floraldesign.vn<br />
+                <strong>Giờ làm việc:</strong> 7:00 - 22:00 mỗi ngày
+            </p>
+        </div>
+    </div>
+    <div id="rightPan">
+        <div id="featured">
+            <h2></h2>
+            <p class="headline">Gửi tin nhắn cho chúng tôi - Phản hồi trong vòng 30 phút!</p>
+            <div style="padding: 10px 0;">
+                <form action="/contacts" method="POST" style="font-size:11px; line-height:24px;">
+                    <p>
+                        <label for="name">Họ và tên:</label><br />
+                        <input type="text" id="name" name="name" placeholder="Nhập họ tên của bạn"
+                            style="width:380px; padding:4px; border:1px solid #ccc; font-size:11px;" />
+                    </p>
+                    <p>
+                        <label for="email">Email:</label><br />
+                        <input type="email" id="email" name="email" placeholder="Nhập email của bạn"
+                            style="width:380px; padding:4px; border:1px solid #ccc; font-size:11px;" />
+                    </p>
+                    <p>
+                        <label for="phone">Số điện thoại:</label><br />
+                        <input type="text" id="phone" name="phone" placeholder="Nhập số điện thoại"
+                            style="width:380px; padding:4px; border:1px solid #ccc; font-size:11px;" />
+                    </p>
+                    <p>
+                        <label for="message">Lời nhắn:</label><br />
+                        <textarea id="message" name="message" rows="4" placeholder="Nhập nội dung cần liên hệ..."
+                            style="width:380px; padding:4px; border:1px solid #ccc; font-size:11px;"></textarea>
+                    </p>
+                    <p>
+                        <input type="submit" value="Gửi tin nhắn"
+                            style="background:#868e36; color:#fff; border:none; padding:6px 18px; cursor:pointer; font-size:11px;" />
+                    </p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer') %>
